@@ -3,7 +3,7 @@ const router = express.Router();
 const admin = require("./AdminRoute");
 const ApplicationRoute = require("./ApplicationRoute")
 
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
   res.send("This is Backend");
 });
 
