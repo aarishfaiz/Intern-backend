@@ -66,20 +66,18 @@ router.put("/:id", async (req, res) => {
     );
 
     if (!updatedStatus) {
-      return res.status(404).json({ error: "Not able to update the Application" });
+      return res
+        .status(404)
+        .json({ error: "Not able to update the Application" });
     }
 
     return res.status(200).json({ success: true, data: updatedStatus });
   } catch (error) {
     console.error(error);
-    return res.status(500).json({ error: "Internal Server Error" });
+    return res
+      .status(500)
+      .json({ error: "Not able to Update the User Status" });
   }
 });
-
-
-
-
-
-
 
 module.exports = router;
