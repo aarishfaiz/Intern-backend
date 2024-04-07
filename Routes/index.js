@@ -6,7 +6,7 @@ const intern = require("./InternshipRoute");
 const job = require("./JobRoute");
 
 
-router.get("/", (req, res) => {
+router.get("/api", (req, res) => {
   res.send("This is Backend");
 });
 
