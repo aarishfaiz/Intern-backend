@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
     res.json(data).status(200);
   } catch (error) {
     console.log(error);
-    res.status(404).json({ error: "Internal Server Error" });
+    res.status(404).json({ error: "Internal Server Error in getting the Applications" });
   }
 });
 
