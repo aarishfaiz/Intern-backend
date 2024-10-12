@@ -35,7 +35,7 @@ router.get("/:id", async (req, res) => {
   const { id } = req.params;
   try {
     const data = await Application.findById(id);
-    if (!data) {
+    if (!data) { 
       res.status(404).json({ error: "Application is not  found" });
     }
     res.json(data).status(200);
